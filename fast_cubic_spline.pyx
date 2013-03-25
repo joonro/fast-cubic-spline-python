@@ -43,18 +43,18 @@ def interpolate(double x,
     Parameters
     ----------
     x : float
-        The value where the function will be approximated at.
+        The value where the function will be approximated at
     a : double
-        lower bound of the grid
+        Lower bound of the grid
     b : double
-        upper bound of the grid
+        Upper bound of the grid
     c : ndarray
-        Coefficients of spline.
+        Coefficients of spline
     
     Returns
     -------
     out : float
-        Approximated function value at x.
+        Approximated function value at x
     '''
 
     cdef:
@@ -81,19 +81,19 @@ def interpolate_2d(double x, double y,
     
     Parameters
     ----------
-    x : float
-        The value where the function will be approximated at.
-    a : double
-        lower bound of the grid
-    b : double
-        upper bound of the grid
+    x, y : float
+        The values where the function will be approximated at
+    a1, b1 : double
+        Lower and upper bounds of the grid for x
+    a2, b2 : double
+        Lower and upper bounds of the grid for y
     c : ndarray
-        Coefficients of spline.
+        Coefficients of spline
     
     Returns
     -------
     out : float
-        Approximated function value at x.
+        Approximated function value at (x, y)
     '''
 
     cdef:
