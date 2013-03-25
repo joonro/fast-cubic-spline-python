@@ -1,7 +1,21 @@
 Python-fast-cubic-spline
 ========================
 
-Implementation of 1D and 2D fast spline interpolation algorithm ([Habermann and Kindermann 2007] [1]) in Python
+Implementation of 1D and 2D fast spline interpolation algorithm ([Habermann and Kindermann 2007] [1]) in Python.
+
+Documentation
+-------------
+
+Compile cython module:
+```sh
+$ python setup.py build_ext --inplace
+```
+
+Run the main module for an example:
+```sh
+$ python fast_cubic_spline.py
+```
+
 
 References
 -------------
