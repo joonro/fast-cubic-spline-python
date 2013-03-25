@@ -66,15 +66,14 @@ interpolate_2d = _spline.interpolate_2d
 
 if __name__ == '__main__':
 
-    from matplotlib import pyplot as plt
-
+    # 1D interpolation
     f = lambda x: x**2
 
     a = -1
     b = 1
-    n = 49  # n + 1 grid points (0,..., n)
+    n = 49  # there are n + 1 grid points (0,..., n)
 
-    h = (b - a)/n
+    h = (b - a) / n
     grid = arange(n + 1) * h + a
 
     y = f(grid)
@@ -86,10 +85,15 @@ if __name__ == '__main__':
     grid_hat = linspace(a, b, 100)
     fhat = array([interpolate(x, a, b, c) for x in grid_hat])
 
-    plt.plot(grid_hat, fhat)
-    plt.plot(grid_hat, f(grid_hat))
+    from matplotlib import pyplot as plt
+    line_actual = plt.plot(grid_hat, f(grid_hat), label='actual')
+    line_approx = plt.plot(grid_hat, fhat, '-.', label='interpolated')
+    plt.setp(line_actual, linewidth=1, linestyle='--')
+    plt.setp(line_approx, linewidth=2, linestyle='-.')
+    plt.legend()
     plt.show()
 
+if not "2D interpolation":
     # 2D interpolation
     f2d = lambda x, z: x**2 + 2*x + 1 + z ** 0.5 + 3 * z
     
