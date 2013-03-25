@@ -3,7 +3,7 @@ from __future__ import division
 from numpy import arange, array, linspace, ones, zeros
 from scipy.linalg import solve_banded
 
-import _spline
+import fast_cubic_spline as _spline
 
 def cal_coefs(a, b, y, c=None, alpha=0, beta=0):
     '''

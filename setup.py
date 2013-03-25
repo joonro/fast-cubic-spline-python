@@ -7,8 +7,8 @@ import numpy
 ext_modules = []
 
 ext_modules.append(Extension(
-    "_spline",
-    ["spline.pyx"],
+    "fast_cubic_spline",
+    ["fast_cubic_spline.pyx"],
     libraries=["m"],
     extra_compile_args=['-fopenmp'],
     extra_link_args=['-fopenmp'],
