@@ -56,6 +56,12 @@ def interpolate(double x,
     out : float
         Approximated function value at x
     '''
+    return(_interpolate(x, a, b, c))
+
+cdef double _interpolate(double x,
+                         double a, double b,
+                         double[:] c,
+                         ) nogil:
 
     cdef:
         int n = c.shape[0] - 3
@@ -95,7 +101,13 @@ def interpolate_2d(double x, double y,
     out : float
         Approximated function value at (x, y)
     '''
-
+    return(_interpolate_2d(x, y, a1, b1, a2, b2, c))
+    
+cdef double _interpolate_2d(double x, double y,
+                            double a1, double b1,
+                            double a2, double b2,
+                            double[:, :] c,
+                            ) nogil:
     cdef:
         int n1 = c.shape[0] - 3
         int n2 = c.shape[1] - 3
