@@ -2,7 +2,8 @@ Fast-cubic-spline-Python
 ========================
 
 Implementation of 1D and 2D fast spline interpolation algorithm ([Habermann
-and Kindermann 2007] [1]) in Python.
+and Kindermann 2007] [1]) in Python.  Higher dimensional interpolation is
+possible with this code, but only 1D and 2D examples are provided.
 
 Calculation of spline coefficients are in NumPy, and actual interpolation
 routine is coded in Cython. This is advantageous since if your main routine is
