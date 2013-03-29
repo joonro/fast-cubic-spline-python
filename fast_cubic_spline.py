@@ -1,3 +1,22 @@
+# Fast-Cubic-Spline-Python provides an implementation of 1D and 2D fast spline
+# interpolation algorithm (Habermann and Kindermann 2007) in Python.
+# Copyright (C) 2012, 2013 Joon H. Ro
+
+# This file is part of Fast-Cubic-Spline-Python.
+
+# Fast-Cubic-Spline-Python is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# Fast-Cubic-Spline-Python is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 from __future__ import division
 
 from numpy import arange, array, linspace, ones, zeros
