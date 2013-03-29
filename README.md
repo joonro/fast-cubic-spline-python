@@ -1,4 +1,4 @@
-Python-fast-cubic-spline
+Fast-cubic-spline-Python
 ========================
 
 Implementation of 1D and 2D fast spline interpolation algorithm ([Habermann
