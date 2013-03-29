@@ -13,10 +13,10 @@ Introduction
 Purpose
 =======
 
-Fast-Cubic-Spline-Python provides an implementation of 1D and 2D fast spline
-interpolation algorithm `Habermann and Kindermann 2007 <http://www.springerlink.com/index/10.1007/s10614-007-9092-4 "Habermann, C., & Kindermann, F. (2007). Multidimensional Spline Interpolation: Theory and Applications. Computational Economics, 30(2), 153–169.">`_) in Python.
-Higher dimensional interpolation is possible with this code, but only 1D and
-2D examples are provided.
+Fast-Cubic-Spline-Python provides an implementation of fast spline
+interpolation algorithm `Habermann and Kindermann 2007`_) in Python.  While
+higher dimensional interpolation is also possible with this code, currently
+only 1D and 2D examples are provided.
 
 Calculation of spline coefficients are in NumPy, and actual interpolation
 routine is coded in Cython. This is advantageous since if your main routine is
@@ -57,3 +57,5 @@ References
 Habermann, C., & Kindermann, F. (2007). Multidimensional Spline Interpolation:
 Theory and Applications. Computational Economics, 30(2), 153–169.
 
+
+.. _Habermann and Kindermann 2007: <http://www.springerlink.com/index/10.1007/s10614-007-9092-4 
